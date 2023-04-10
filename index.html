@@ -1,0 +1,81 @@
+<!-- ************************************************************************ */
+/*                                                                            */
+/*   index.html   (Création et modification de class (niveau: débutant))      */
+/*                                                                            */
+/*   By: jean-marc <jmwanc@gmail.com>                                         */
+/*                                                                            */
+/* ************************************************************************** -->
+
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/styleArena.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <div id="bloc_page">
+            <header>
+                <nav class="flex_row">
+                    <a href="#">CODED</a>
+                    <a href="#">BY</a>
+                    <a href="#">JM</a>
+                </nav>
+            </header>
+            <section class="flex_row">
+                <div id="img_arene">
+                    <h2>Choix de l'arène</h2>
+                    <select name="maps" id="map-select" onchange="chooseArena()">
+                        <option selected="selected" value="Choose">Choose a map</option>
+                        <option value="Namek">Namek</option>
+                        <option value="Ice_map">Ice_map</option>
+                        <option value="Jungle">Jungle</option>
+                        <option value="Nocturne">Nocturne</option>
+                    </select>
+                </div>
+                <div class="flex_column">
+                    <nav>
+                        <h2>Modification d'un personnage:</h2>
+
+                        <label>Choix du personnage:</label>
+                        <select class="make-perso-select">                      
+                        </select>
+
+                        <p id="description_perso">No description available</p>
+
+                        <label>Changer attribut du perso:</label>
+                        <input type="text" id="input_attribut" placeholder="'pv': '100'|'name': 'New name'" />
+                        <button id="btnChangeAttr">Change</button>
+                        <button id="btnAddPerso">Ajouter un perso</button>
+                    </nav>
+                    <nav>
+                        <h2>Choix du personnage:</h2>
+
+                        <label>Choix du personnage:</label>
+                        <select class="make-perso-select" id="make-perso-select2"> 
+                        </select> 
+
+                        <label>Lancer une attaque:</label>
+                        <select id="choose-attaque-select">
+                        </select>
+
+                        <label>Choisir une cible:</label>
+                        <select id="choose-target-select">
+                        </select> 
+                        <button style="margin:0" id="btnAttaque">Attaquer !</button>
+                    </nav>
+                </div>
+            </section>
+            <div id="container_interaction">
+                <nav>
+                    <h2>PERSO's CMD</h2>
+                    <h3>Bienvenue sur le log des combats !</h3>
+                    <p id="content_battle">> Attente d'un combat</p>
+                </nav>
+            </div>
+        </div>
+        <script src="./js/arena.js" ></script>
+    </body>
+</html>

@@ -1,0 +1,176 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*   styleArena.css                                                           */
+/*                                                                            */
+/*   By: jean-marc <jmwanc@gmail.com>                                         */
+/*                                                                            */
+/* ************************************************************************** */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #F1F2F4;
+    font-size: 67.5%;
+}
+
+/* utils */
+
+.flex_row{
+    display: flex;
+    flex-flow: wrap row;
+}
+
+.flex_column{
+    display: flex;
+    flex-flow: wrap column;
+}
+
+/* HEADER */
+
+body header{
+    width: 100%;
+    padding: 10px;
+    /*background-color: rgb(212, 151, 151);*/
+    background: linear-gradient(rgba(1, 1, 1, 0.8), rgba(1, 1, 1, 0.9));
+}
+
+body header nav{
+    width: 50%;
+    margin: auto;
+    justify-content: space-between;
+}
+
+body header nav a{
+    padding: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(218, 223, 160);
+}
+
+body header nav a:hover{
+    /*background-color: rgb(218, 223, 160);*/
+    background-color: rgba(1, 1, 1, 0.8);
+}
+
+/* SECTION */
+body section #img_arene{
+    color:rgb(218, 223, 160);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body section #img_arene select{
+    text-align: center;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1.4em;
+}
+
+body section{
+    width: 50%;
+    margin: 80px auto 30px auto;
+    justify-content: space-between;
+}
+
+body section > :first-child{
+    width: 70%;
+    border: 1px solid black;
+    background-color: rgba(1, 1, 1, 0.8);
+}
+
+body section > :last-child{
+    width: 28%;
+    justify-content: space-between;
+}
+
+body section > :last-child nav{
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border: 1px solid gray;
+    word-wrap: break-word;
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body section > :last-child nav h2{
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: normal;
+    word-break: break-word;
+}
+
+body section > :last-child nav label{
+    display: block;
+    margin-top: 1%;
+}
+
+body section > :last-child nav p{
+    width: 80%;
+    word-break: break-word;
+    line-height: 17px;
+    margin-top: 5px;
+    color: gray;
+}
+
+body section > :last-child nav input{
+    width: 30%;
+    display: block;
+}
+
+body section > :last-child nav button{
+    width: 80%;
+    display: block;
+}
+
+body section > :last-child nav input,
+body section > :last-child nav select{
+    width: 80%;
+}
+
+/* INTERACTION */
+
+body #bloc_page #container_interaction{
+    width: 50%;
+    margin: 0 auto;
+}
+
+body #bloc_page #container_interaction > :first-child{
+    width: 100%;
+    padding: 1%;
+    background: linear-gradient(rgba(1, 1, 1, 0.8), rgba(1, 1, 1, 0.9));
+    text-align: center;
+}
+
+body #bloc_page #container_interaction > :first-child h2{
+    width: 100%;
+    color: rgb(90, 165, 119);
+    font-size: 1.8em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+
+body #bloc_page #container_interaction > :first-child h3{
+    width: 100%;
+    color: #F1F2F4;
+    font-size: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+
+body #bloc_page #container_interaction > :first-child p{
+    margin-top: 10px;
+    width: 100%;
+    color: rgb(171, 0, 0);
+    font-size: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    text-align: start;
+}
